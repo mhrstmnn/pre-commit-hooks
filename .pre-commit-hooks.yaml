@@ -6,3 +6,21 @@
   language: python
   types: [python]
   require_serial: true
+
+- id: clang-format
+  name: run clang-format
+  description: A tool to format C++ code
+  entry: clang-format -i
+  args: [--style=file]
+  language: python
+  types_or: [c, c++]
+  require_serial: false
+
+- id: clang-tidy
+  name: run clang-tidy
+  description: A clang-based C++ linter tool
+  entry: clang-tidy
+  args: [-p, ./build]
+  language: python
+  types_or: [c, c++]
+  require_serial: true
