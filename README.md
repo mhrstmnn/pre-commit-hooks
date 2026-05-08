@@ -4,12 +4,14 @@ Collection of useful pre-commit hooks
 
 ## Usage
 
-Add this to your `.pre-commit-config.yaml`:
+Add the hooks you want to use to your `.pre-commit-config.yaml`:
 
 ```yaml
 repos:
   - repo: https://github.com/mhrstmnn/pre-commit-hooks
-    rev: v0.0.1
+    rev: v0.1.0
     hooks:
       - id: ty-check
+      - id: clang-format
+      - id: clang-tidy
 ```
