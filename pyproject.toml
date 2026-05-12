@@ -7,6 +7,7 @@ requires-python = ">=3.14"
 dependencies = [
     "clang-format>=22.1.5",
     "clang-tidy>=22.1.0.1",
+    "clangd-tidy>=1.1.1",
     "ty>=0.0.34",
 ]
 

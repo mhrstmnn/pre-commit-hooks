@@ -23,3 +23,11 @@
   language: python
   types_or: [c, c++]
   require_serial: true
+
+- id: clangd-tidy
+  name: run clangd-tidy
+  description: A faster alternative to clang-tidy
+  entry: clangd-tidy
+  language: python
+  types_or: [c, c++]
+  require_serial: true
