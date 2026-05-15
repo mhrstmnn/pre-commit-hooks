@@ -12,7 +12,7 @@ repos:
     rev: v0.2.0
     hooks:
       - id: ty-check
-      - id: clang-format
       - id: clang-tidy
       - id: clangd-tidy
+      - id: clang-format
 ```
