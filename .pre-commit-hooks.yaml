@@ -7,16 +7,8 @@
   types: [python]
   require_serial: true
 
-- id: clang-format
-  name: run clang-format
-  description: A tool to format C++ code
-  entry: clang-format
-  args: [-i]
-  language: python
-  types_or: [c, c++]
-
 - id: clang-tidy
-  name: run clang-tidy
+  name: lint with clang
   description: A clang-based C++ linter tool
   entry: clang-tidy
   args: [-p, ./build]
@@ -25,9 +17,17 @@
   require_serial: true
 
 - id: clangd-tidy
-  name: run clangd-tidy
+  name: lint with clangd
   description: A faster alternative to clang-tidy
   entry: clangd-tidy
   language: python
   types_or: [c, c++]
   require_serial: true
+
+- id: clang-format
+  name: format with clang
+  description: A tool to format C++ code
+  entry: clang-format
+  args: [-i]
+  language: python
+  types_or: [c, c++]
